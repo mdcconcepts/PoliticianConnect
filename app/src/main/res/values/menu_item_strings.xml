@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>होम</item>
+        <item>सरकारी कार्यालय</item>
+        <item>वर्तमानपत्र</item>
+        <item>दवाखाना</item>
+        <item>रेल्वे वेळापत्रक</item>
+        <item>विमान वेळापत्रक</item>
+        <item>बस वेळापत्रक</item>
+        <item>गॅस बुकींग</item>
+        <item>महत्वाचे नंबर्स</item>
+        <item>ऑनलाइन सात बारा</item>
+        <item>शॉपिंग</item>
+    </string-array>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="en_nav_drawer_items">
+        <item>Home</item>
+        <item>government Offices</item>
+        <item>Newspapers</item>
+        <item>Hospitals</item>
+        <item>Railway Timetable</item>
+        <item>Flight Timetable</item>
+        <item>Bus Timetable</item>
+        <item>Gas Booking</item>
+        <item>Important Contacts</item>
+        <item>Online 7-12</item>
+        <item>Shopping</item>
+
+
+    </string-array>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="hn_nav_drawer_items">
+        <item>होम</item>
+        <item>सरकारी कार्यालय</item>
+        <item>समाचार पत्र्</item>
+        <item>अस्पताल</item>
+        <item>रेलवे समय - तालिका</item>
+        <item>उड़ान समय - तालिका</item>
+        <item>बस समय - तालिका</item>
+        <item>गैस बुकिंग</item>
+        <item>महत्वपूर्ण संपर्क</item>
+        <item>ऑनलाइन 7-12</item>
+        <item>खरीदारी</item>
+    </string-array>
+
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_menu_govt_office</item>
+        <item>@drawable/ic_menu_news</item>
+        <item>@drawable/ic_menu_hospital</item>
+        <item>@drawable/ic_menu_railway</item>
+        <item>@drawable/ic_menu_flight</item>
+        <item>@drawable/ic_menu_bus</item>
+        <item>@drawable/ic_menu_gas</item>
+        <item>@drawable/ic_menu_emergency</item>
+        <item>@drawable/ic_menu_online_712</item>
+        <item>@drawable/ic_menu_shopping</item>
+
+    </array>
+
+</resources>

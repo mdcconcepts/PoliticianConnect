@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mdcconcepts.androidapp.politicianconnect.gallary.GalleryActivity">
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ProgressBar_GalleryLoader"
+        android:layout_gravity="center"
+        android:indeterminate="false" />
+
+    <GridView
+        android:id="@+id/gridview_gallary"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:choiceMode="none"
+        android:gravity="center"
+        android:numColumns="3" />
+
+</FrameLayout>

@@ -1,0 +1,137 @@
+{
+  "States": [
+    {
+      "Name": "महाराष्ट्र",
+      "Cities": [
+        {
+          "name": "अहमदनगर",
+          "pincode": ""
+        },
+        {
+          "name": "अकोला",
+          "pincode": ""
+        },
+        {
+          "name": "अमरावती",
+          "pincode": ""
+        },
+        {
+          "name": "औरंगाबाद",
+          "pincode": ""
+        },
+        {
+          "name": "भंडारा",
+          "pincode": ""
+        },
+        {
+          "name": "बिड",
+          "pincode": ""
+        },
+        {
+          "name": "Buldana",
+          "pincode": ""
+        },
+        {
+          "name": "चंद्रपूर",
+          "pincode": ""
+        },
+        {
+          "name": "धुळे",
+          "pincode": ""
+        },
+        {
+          "name": "Garhchiroli",
+          "pincode": ""
+        },
+        {
+          "name": "गोंदिया",
+          "pincode": ""
+        },
+        {
+          "name": "ग्रेटर मुंबई",
+          "pincode": ""
+        },
+        {
+          "name": "हिंगोली",
+          "pincode": ""
+        },
+        {
+          "name": "जळगाव",
+          "pincode": ""
+        },
+        {
+          "name": "कोल्हापूर",
+          "pincode": ""
+        },
+        {
+          "name": "लातूर",
+          "pincode": ""
+        },
+        {
+          "name": "नागपूर",
+          "pincode": ""
+        },
+        {
+          "name": "नांदेड",
+          "pincode": ""
+        },
+        {
+          "name": "नंदुरबार",
+          "pincode": ""
+        },
+        {
+          "name": "नाशिक",
+          "pincode": ""
+        },
+        {
+          "name": "उस्मानाबाद",
+          "pincode": ""
+        },
+        {
+          "name": "पुणे",
+          "pincode": ""
+        },
+        {
+          "name": "रायगड",
+          "pincode": ""
+        },
+        {
+          "name": "रत्नागिरी",
+          "pincode": ""
+        },
+        {
+          "name": "सांगली",
+          "pincode": ""
+        },
+        {
+          "name": "सातारा",
+          "pincode": ""
+        },
+        {
+          "name": "सिंधुदुर्ग",
+          "pincode": ""
+        },
+        {
+          "name": "सोलापूर",
+          "pincode": ""
+        },
+        {
+          "name": "ठाणे",
+          "pincode": ""
+        },
+        {
+          "name": "वर्धा",
+          "pincode": ""
+        },
+        {
+          "name": "वाशिम",
+          "pincode": ""
+        },
+        {
+          "name": "यवतमाळ",
+          "pincode": ""
+        }
+      ]
+    }
+  ]
+}

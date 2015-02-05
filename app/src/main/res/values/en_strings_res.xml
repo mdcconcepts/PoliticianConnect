@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="English_Strings">
+        <item>Name</item>
+        <item>Mobile No</item>
+        <item>State</item>
+        <item>City</item>
+        <item>Gender</item>
+        <item>Birth Date</item>
+        <item>Maharashtra Govt</item>
+        <item>Next</item>
+
+        <item>Introduction</item>
+        <item>My Aim</item>
+        <item>Photo Gallery</item>
+        <item>Video Gallery</item>
+        <item>News</item>
+        <item>Project</item>
+        <item>Message</item>
+        <item>Contact</item>
+    </string-array>
+</resources>

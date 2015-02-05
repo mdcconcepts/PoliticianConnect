@@ -1,0 +1,10 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:choiceMode="singleChoice"
+    android:divider="#f9f9f9"
+    android:dividerHeight="1dp"
+    tools:context=".NavigationDrawerFragment"
+    android:id="@+id/list_slidermenu"
+    android:background="@drawable/language_gradient_bg" />

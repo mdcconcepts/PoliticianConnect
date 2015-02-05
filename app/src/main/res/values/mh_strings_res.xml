@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Marathi_Strings">
+        <item>नाव</item>
+        <item>मोबाईल नंबर </item>
+        <item>राज्य</item>
+        <item>शहर</item>
+        <item>लिंग </item>
+        <item>जन्म तारीख </item>
+        <item>महाराष्ट्र सरकार</item>
+        <item>पुढे जाण्यासाठी</item>
+
+        <item>अल्पपरिचय</item>
+        <item>माझे ध्येय</item>
+        <item>फोटो गॅलरी</item>
+        <item>व्हिडिओ गॅलरी</item>
+        <item>घडमोडी </item>
+        <item>प्रकल्प</item>
+        <item>संदेश</item>
+        <item>संपर्क </item>
+    </string-array>
+</resources>

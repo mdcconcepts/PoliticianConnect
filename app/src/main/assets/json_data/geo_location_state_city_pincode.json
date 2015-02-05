@@ -1,0 +1,137 @@
+{
+  "States": [
+    {
+      "Name": "Maharashtra",
+      "Cities": [
+        {
+          "name": "Ahmadnagar",
+          "pincode": ""
+        },
+        {
+          "name": "Akola",
+          "pincode": ""
+        },
+        {
+          "name": "Amravati",
+          "pincode": ""
+        },
+        {
+          "name": "Aurangabad",
+          "pincode": ""
+        },
+        {
+          "name": "Bhandara",
+          "pincode": ""
+        },
+        {
+          "name": "Bid",
+          "pincode": ""
+        },
+        {
+          "name": "Buldana",
+          "pincode": ""
+        },
+        {
+          "name": "Chandrapur",
+          "pincode": ""
+        },
+        {
+          "name": "Dhule",
+          "pincode": ""
+        },
+        {
+          "name": "Garhchiroli",
+          "pincode": ""
+        },
+        {
+          "name": "Gondiya",
+          "pincode": ""
+        },
+        {
+          "name": "Greater Bombay",
+          "pincode": ""
+        },
+        {
+          "name": "Hingoli",
+          "pincode": ""
+        },
+        {
+          "name": "Jalgaon",
+          "pincode": ""
+        },
+        {
+          "name": "Kolhapur",
+          "pincode": ""
+        },
+        {
+          "name": "Latur",
+          "pincode": ""
+        },
+        {
+          "name": "Nagpur",
+          "pincode": ""
+        },
+        {
+          "name": "Nanded",
+          "pincode": ""
+        },
+        {
+          "name": "Nandurbar",
+          "pincode": ""
+        },
+        {
+          "name": "Nashik",
+          "pincode": ""
+        },
+        {
+          "name": "Osmanabad",
+          "pincode": ""
+        },
+        {
+          "name": "Pune",
+          "pincode": ""
+        },
+        {
+          "name": "Raigarh",
+          "pincode": ""
+        },
+        {
+          "name": "Ratnagiri",
+          "pincode": ""
+        },
+        {
+          "name": "Sangli",
+          "pincode": ""
+        },
+        {
+          "name": "Satara",
+          "pincode": ""
+        },
+        {
+          "name": "Sindhudurg",
+          "pincode": ""
+        },
+        {
+          "name": "Solapur",
+          "pincode": ""
+        },
+        {
+          "name": "Thane",
+          "pincode": ""
+        },
+        {
+          "name": "Wardha",
+          "pincode": ""
+        },
+        {
+          "name": "Washim",
+          "pincode": ""
+        },
+        {
+          "name": "Yavatmal",
+          "pincode": ""
+        }
+      ]
+    }
+  ]
+}
