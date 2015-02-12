@@ -24,7 +24,11 @@ import com.mdcconcepts.androidapp.politicianconnect.common.network.NetworkTask;
 import com.mdcconcepts.androidapp.politicianconnect.common.network.Post_URL;
 import com.mdcconcepts.androidapp.politicianconnect.common.network.Responce;
 import com.mdcconcepts.androidapp.politicianconnect.common.util.Util;
+import com.mdcconcepts.androidapp.politicianconnect.fragments.user_connect.UserConnectActivity;
 import com.mdcconcepts.androidapp.politicianconnect.gallary.GalleryActivity;
+import com.mdcconcepts.androidapp.politicianconnect.politician.MLAContactActivity;
+import com.mdcconcepts.androidapp.politicianconnect.politician.OperationsActivity;
+import com.mdcconcepts.androidapp.politicianconnect.politician.PoliticianInformationActivity;
 import com.squareup.picasso.Picasso;
 
 import org.apache.http.NameValuePair;
@@ -129,6 +133,57 @@ public class HomeFragment extends Fragment implements CompletionListener {
             }
         });
 
+        button_my_aim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), PoliticianInformationActivity.class);
+                intent.putExtra("is_aim", 1);
+                startActivity(intent);
+            }
+        });
+
+        button_brief_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), PoliticianInformationActivity.class);
+                intent.putExtra("is_aim", 0);
+                startActivity(intent);
+            }
+        });
+
+        button_project.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), OperationsActivity.class);
+                intent.putExtra("is_project", 1);
+                startActivity(intent);
+            }
+        });
+
+        button_news.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), OperationsActivity.class);
+                intent.putExtra("is_project", 0);
+                startActivity(intent);
+            }
+        });
+
+        button_communication.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), UserConnectActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        button_message.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MLAContactActivity.class);
+                startActivity(intent);
+            }
+        });
         return rootView;
     }
 
@@ -211,8 +266,8 @@ public class HomeFragment extends Fragment implements CompletionListener {
         button_video_gallary.setText(Label_Text_array[11]);
         button_news.setText(Label_Text_array[12]);
         button_project.setText(Label_Text_array[13]);
-        button_message.setText(Label_Text_array[14]);
-        button_communication.setText(Label_Text_array[15]);
+        button_message.setText(Label_Text_array[15]);
+        button_communication.setText(Label_Text_array[14]);
 
 
     }

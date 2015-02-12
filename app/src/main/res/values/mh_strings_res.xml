@@ -16,7 +16,22 @@
         <item>व्हिडिओ गॅलरी</item>
         <item>घडमोडी </item>
         <item>प्रकल्प</item>
-        <item>संदेश</item>
+        <item>संवाद</item>
         <item>संपर्क </item>
+
+        <item>मराठी वृत्तपत्र</item>
+        <item>हिंदी वृत्तपत्र</item>
+        <item>इंग्रजी वृत्तपत्र</item>
+
+        <item>कॉल करा</item>
+        <item>बुकिंग</item>
+
+        <item>मोबाइल : </item>
+        <item>लँडलाईन : </item>
+        <item>सविस्तर वृत्त</item>
+
+        <item>ईमेल</item>
+        <item>कार्यालय फोन</item>
+        <item>कार्यालया पता</item>
     </string-array>
 </resources>

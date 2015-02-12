@@ -16,7 +16,23 @@
         <item>Video Gallery</item>
         <item>News</item>
         <item>Project</item>
-        <item>Message</item>
+        <item>Communication</item>
         <item>Contact</item>
+
+        <item>Marathi Newspaper</item>
+        <item>Hindi Newspaper</item>
+        <item>English Newspaper</item>
+
+
+        <item>Make call</item>
+        <item>Booking</item>
+
+        <item>Mobile :</item>
+        <item>Landline :</item>
+        <item>Detailed News</item>
+
+        <item>Email :</item>
+        <item>Office Phone :</item>
+        <item>Office Phone :</item>
     </string-array>
 </resources>

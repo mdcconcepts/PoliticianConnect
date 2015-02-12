@@ -16,7 +16,24 @@
         <item>वीडियो गैलरी</item>
         <item>समाचार</item>
         <item>प्रकल्प</item>
-        <item>संदेश</item>
+        <item>संवाद</item>
         <item>संपर्क </item>
+
+        <item>मराठी अखबार</item>
+        <item>हिंदी अख़बार</item>
+        <item>अंग्रेजी अखबार</item>
+
+
+        <item>कॉल करें</item>
+        <item>बुकिंग</item>
+
+        <item>मोबाइल :</item>
+        <item>लँडलाईन :</item>
+        <item>विस्तृत खबर</item>
+
+        <item>ईमेल</item>
+        <item>कार्यालय फोन</item>
+        <item>कार्यालयाचा पत्त</item>
+
     </string-array>
 </resources>

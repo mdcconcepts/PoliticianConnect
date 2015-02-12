@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mdcconcepts.androidapp.politicianconnect" >
+    package="com.mdcconcepts.androidapp.politicianconnect">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".HomeActivity"
-            android:label="@string/app_name" />
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".common.LanguageActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_language"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,11 +30,12 @@
         <activity
             android:name=".common.LoginActivity"
             android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name=".gallary.GalleryActivity"
             android:label="@string/title_activity_gallery"
-            android:parentActivityName=".HomeActivity" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mdcconcepts.androidapp.politicianconnect.HomeActivity" />
@@ -39,10 +43,58 @@
         <activity
             android:name=".gallary.GalleryViewActivity"
             android:label="@string/title_activity_gallery_view"
-            android:parentActivityName=".gallary.GalleryActivity" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mdcconcepts.androidapp.politicianconnect.gallary.GalleryActivity" />
+        </activity>
+        <activity
+            android:name=".politician.PoliticianInformationActivity"
+            android:label="@string/title_activity_politician_information"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mdcconcepts.androidapp.politicianconnect.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".fragments.services.shopping.sub_shopping.ShoppingProduct"
+            android:label="@string/title_activity_shopping_product"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragments.services.subservice.SubServiceActivity"
+            android:label="@string/title_activity_sub_service"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".politician.OperationsActivity"
+            android:label="@string/title_activity_operations"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mdcconcepts.androidapp.politicianconnect.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".fragments.user_connect.UserConnectActivity"
+            android:label="@string/title_activity_user_connect"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mdcconcepts.androidapp.politicianconnect.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".fragments.user_connect.ChatRoomActivity"
+            android:label="@string/title_activity_chat_room"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mdcconcepts.androidapp.politicianconnect.fragments.user_connect.UserConnectActivity" />
+        </activity>
+        <activity
+            android:name=".politician.MLAContactActivity"
+            android:label="@string/title_activity_mlacontact"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mdcconcepts.androidapp.politicianconnect.HomeActivity" />
         </activity>
     </application>
 

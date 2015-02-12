@@ -75,7 +75,7 @@ public class NetworkTask extends AsyncTask<Object, Integer, JSONObject> {
 
                 Log.e(TAG, "Response:" + jsonObject.toString());
 
-                parentActivity.onComplete(jsonObject, 1);
+                parentActivity.onComplete(jsonObject, RESPONSE_IDENTIFIER_FLAG);
 
             } else {
                 Toast.makeText(context,

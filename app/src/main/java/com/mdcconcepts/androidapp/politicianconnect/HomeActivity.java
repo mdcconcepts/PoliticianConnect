@@ -18,6 +18,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.mdcconcepts.androidapp.politicianconnect.fragments.home.HomeFragment;
+import com.mdcconcepts.androidapp.politicianconnect.fragments.services.newspaper.NewsPaperFragment;
+import com.mdcconcepts.androidapp.politicianconnect.fragments.services.ServiceFragment;
+import com.mdcconcepts.androidapp.politicianconnect.fragments.services.shopping.ShoppingFragment;
 
 
 public class HomeActivity extends ActionBarActivity
@@ -112,9 +115,55 @@ public class HomeActivity extends ActionBarActivity
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
         switch (position) {
-            case 1:
+            case 0:
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, HomeFragment.newInstance(position + 1))
+                        .commit();
+                break;
+            case 1:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, ServiceFragment.newInstance(9, 2, 1))
+                        .commit();
+                break;
+            case 2:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, NewsPaperFragment.newInstance())
+                        .commit();
+                break;
+            case 3:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, ServiceFragment.newInstance(3, 0, 3))
+                        .commit();
+                break;
+            case 4:
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.irctc.co.in/eticketing/loginHome.jsf"));
+                startActivity(browserIntent);
+                break;
+            case 5:
+                browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.airindia.in"));
+                startActivity(browserIntent);
+                break;
+            case 6:
+                browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.busindia.com/bus/"));
+                startActivity(browserIntent);
+                break;
+            case 7:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, ServiceFragment.newInstance(2, 0, 7))
+                        .commit();
+                break;
+            case 8:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, ServiceFragment.newInstance(1, 0, 8))
+                        .commit();
+                break;
+            case 9:
+                browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://mahabhulekh.maharashtra.gov.in"));
+                startActivity(browserIntent);
+                break;
+            case 10:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, ShoppingFragment.newInstance())
                         .commit();
                 break;
             default:

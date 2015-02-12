@@ -45,5 +45,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_gallery">"Gallery "</string>
     <string name="title_activity_gallery_view">GalleryViewActivity</string>
+    <string name="title_activity_politician_information">Information</string>
+    <string name="title_activity_shopping_product">ShoppingProduct</string>
+    <string name="title_activity_sub_service">SubService</string>
+    <string name="title_activity_operations">Operations</string>
+    <string name="title_activity_user_connect">UserConnectActivity</string>
+    <string name="title_activity_chat_room">ChatRoomActivity</string>
+    <string name="title_activity_mlacontact">MLAContactActivity</string>
 
 </resources>
