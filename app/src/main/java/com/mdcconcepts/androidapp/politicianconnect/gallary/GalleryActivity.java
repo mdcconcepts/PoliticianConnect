@@ -1,5 +1,6 @@
 package com.mdcconcepts.androidapp.politicianconnect.gallary;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.mdcconcepts.androidapp.politicianconnect.R;
 import com.mdcconcepts.androidapp.politicianconnect.common.custom.PreferencesManager;
@@ -84,8 +86,29 @@ public class GalleryActivity extends ActionBarActivity implements CompletionList
 
                         break;
                     default:
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube://" + Gallery_Images.get(position)));
-                        startActivity(intent);
+                        try {
+                            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube://" + Gallery_Images.get(position)));
+                            startActivity(intent);
+                        } catch (ActivityNotFoundException e) {
+                            String Message;
+
+                            switch (PreferencesManager.getInstance().getLanguageValue()) {
+                                case 2:
+                                    Message = "आपल्या गैरसोयीबद्दल आम्ही क्षमस्व कृपया पुन्हा प्रयत्न करा !";
+                                    break;
+                                case 1:
+                                    Message = "आपकी असुविधा के लिए खेद है पुन: प्रयास करें !";
+                                    break;
+                                default:
+                                    Message = "Sorry for your inconvenience please try again! ";
+                                    break;
+                            }
+
+                            Toast.makeText(GalleryActivity.this, Message, Toast.LENGTH_SHORT).show();
+
+                        } catch (Exception e) {
+                            Util.log(TAG, e.getMessage());
+                        }
                         break;
                 }
 

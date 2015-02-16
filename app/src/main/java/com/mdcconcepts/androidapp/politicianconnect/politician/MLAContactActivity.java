@@ -178,7 +178,7 @@ public class MLAContactActivity extends ActionBarActivity implements CompletionL
         TextView_lblOfficePhone.setText(Label_Text_array[25]);
         TextView_lblOffice_Address.setText(Label_Text_array[26]);
         Button_Call.setText(Label_Text_array[19]);
-        Button_Email.setText(Label_Text_array[24]);
+        Button_Email.setText(Label_Text_array[24].replace(":", ""));
         Button_OfficeCall.setText(Label_Text_array[19]);
 
 

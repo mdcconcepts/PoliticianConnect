@@ -158,7 +158,7 @@ public class ChatRoomActivity extends ActionBarActivity implements CompletionLis
             params.add(new BasicNameValuePair("question_id", "" + question_id));
         } else {
             params.add(new BasicNameValuePair("question_id", "" + question_id));
-            params.add(new BasicNameValuePair("user_id", "4"));
+            params.add(new BasicNameValuePair("user_id", "" + PreferencesManager.getInstance().getUserId()));
             params.add(new BasicNameValuePair("message", EditText_Reply.getText().toString().trim()));
         }
         return params;

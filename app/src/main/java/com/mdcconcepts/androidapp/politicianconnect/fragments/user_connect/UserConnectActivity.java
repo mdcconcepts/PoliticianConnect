@@ -167,11 +167,11 @@ public class UserConnectActivity extends ActionBarActivity implements Completion
 
         switch (requests) {
             case 1:
-                params.add(new BasicNameValuePair("user_id", "4"));
+                params.add(new BasicNameValuePair("user_id", "" + PreferencesManager.getInstance().getUserId()));
 
                 break;
             case 2:
-                params.add(new BasicNameValuePair("user_id", "4"));
+                params.add(new BasicNameValuePair("user_id", "" + PreferencesManager.getInstance().getUserId()));
                 params.add(new BasicNameValuePair("title", EditText_ContactSubject.getText().toString().trim()));
                 params.add(new BasicNameValuePair("message", EditText_ContactMessage.getText().toString().trim()));
 

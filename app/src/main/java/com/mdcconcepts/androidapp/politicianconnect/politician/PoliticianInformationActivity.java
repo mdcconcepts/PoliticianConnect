@@ -29,9 +29,9 @@ public class PoliticianInformationActivity extends ActionBarActivity {
         WebView WebView_information = (WebView) findViewById(R.id.WebView_information);
         WebView_information.getSettings().setJavaScriptEnabled(true);
         if (is_aim == 0) {
-            WebView_information.loadUrl(Post_URL.DOMAIN + "politician/index.php/adminPanel/view?ADMIN_TOKEN=" + AppConstants.ADMIN_ID);
+            WebView_information.loadUrl(Post_URL.DOMAIN + "index.php/adminPanel/view?ADMIN_TOKEN=" + AppConstants.ADMIN_ID);
         } else {
-            WebView_information.loadUrl(Post_URL.DOMAIN + "politician/index.php/adminPanel/goals?ADMIN_TOKEN=" + AppConstants.ADMIN_ID);
+            WebView_information.loadUrl(Post_URL.DOMAIN + "index.php/adminPanel/goals?ADMIN_TOKEN=" + AppConstants.ADMIN_ID);
         }
     }
 

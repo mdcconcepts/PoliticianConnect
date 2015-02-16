@@ -20,6 +20,7 @@ public class PreferencesManager {
          */
         private static final String LANGUAGE_VALUE = "LANGUAGE_VALUE";
         private static final String USER_DATA = "USER_DATA";
+        private static final String USER_ID = "USER_ID";
     }
 
 
@@ -76,4 +77,13 @@ public class PreferencesManager {
         return mPref.getString(Key.USER_DATA, "");
     }
 
+    public void setUserId(int UserId) {
+        mPref.edit()
+                .putInt(Key.USER_ID, UserId)
+                .apply();
+    }
+
+    public int getUserId() {
+        return mPref.getInt(Key.USER_ID, -1);
+    }
 }

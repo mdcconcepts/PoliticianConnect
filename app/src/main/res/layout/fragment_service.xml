@@ -42,8 +42,8 @@
             android:id="@+id/GridView_Service"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
             android:numColumns="2"
-            android:choiceMode="none" />
+            android:choiceMode="none"
+            android:padding="5dp" />
     </FrameLayout>
 </LinearLayout>

@@ -33,6 +33,7 @@
 
         <item>Email :</item>
         <item>Office Phone :</item>
-        <item>Office Phone :</item>
+        <item>Message</item>
+        <item>Setting</item>
     </string-array>
 </resources>

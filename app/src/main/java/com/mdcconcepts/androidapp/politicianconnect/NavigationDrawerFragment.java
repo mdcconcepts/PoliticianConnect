@@ -3,6 +3,7 @@ package com.mdcconcepts.androidapp.politicianconnect;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -200,6 +201,8 @@ public class NavigationDrawerFragment extends Fragment {
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeButtonEnabled(true);
+        Drawable d = getResources().getDrawable(R.drawable.actionbar_bg);
+        actionBar.setBackgroundDrawable(d);
 
         // ActionBarDrawerToggle ties together the the proper interactions
         // between the navigation drawer and the action bar app icon.

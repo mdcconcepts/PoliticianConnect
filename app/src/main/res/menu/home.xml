@@ -9,7 +9,7 @@
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_message"
-        android:icon="@drawable/ic_message"
+        android:icon="@drawable/ic_menu_message"
         android:title="@string/action_message"
         app:showAsAction="ifRoom" />
     <item

@@ -34,6 +34,7 @@
         <item>ईमेल</item>
         <item>कार्यालय फोन</item>
         <item>कार्यालयाचा पत्त</item>
-
+        <item>संदेश</item>
+        <item>सेटिंग</item>
     </string-array>
 </resources>

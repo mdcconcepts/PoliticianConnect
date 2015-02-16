@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
@@ -16,11 +17,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.mdcconcepts.androidapp.politicianconnect.common.SettingActivity;
+import com.mdcconcepts.androidapp.politicianconnect.common.custom.PreferencesManager;
 import com.mdcconcepts.androidapp.politicianconnect.fragments.home.HomeFragment;
-import com.mdcconcepts.androidapp.politicianconnect.fragments.services.newspaper.NewsPaperFragment;
 import com.mdcconcepts.androidapp.politicianconnect.fragments.services.ServiceFragment;
+import com.mdcconcepts.androidapp.politicianconnect.fragments.services.newspaper.NewsPaperFragment;
 import com.mdcconcepts.androidapp.politicianconnect.fragments.services.shopping.ShoppingFragment;
+import com.mdcconcepts.androidapp.politicianconnect.politician.MessageActivity;
 
 
 public class HomeActivity extends ActionBarActivity
@@ -40,6 +45,7 @@ public class HomeActivity extends ActionBarActivity
      * Social Connects
      */
     ImageView Facebook, Youtube, LinkedIn, Tweeter;
+    private boolean mdoubleBackToExitPressedOnce;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -220,7 +226,24 @@ public class HomeActivity extends ActionBarActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_settings) {
+            Intent intent = new Intent(this, SettingActivity.class);
+            startActivity(intent);
+            finish();
             return true;
+        } else if (id == R.id.action_message) {
+
+            Intent intent = new Intent(this, MessageActivity.class);
+            startActivity(intent);
+
+        } else if (id == R.id.action_share) {
+            String shareBody = "https://play.google.com/store/apps/details?id=org.mdcconcepts.opinion_desk.opinion_desk";
+
+            Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "APP NAME (Open it in Google Play Store to Download the Application)");
+
+            sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+            startActivity(Intent.createChooser(sharingIntent, "Share via"));
         }
         return super.onOptionsItemSelected(item);
     }
@@ -263,6 +286,40 @@ public class HomeActivity extends ActionBarActivity
             ((HomeActivity) activity).onSectionAttached(
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mdoubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.mdoubleBackToExitPressedOnce = true;
+
+        String Message;
+
+        switch (PreferencesManager.getInstance().getLanguageValue()) {
+            case 2:
+                Message = "बाहेर पडण्यासाठी परत क्लिक करा";
+                break;
+            case 1:
+                Message = "बाहर निकलने के लिए फिर से वापस क्लिक करें";
+                break;
+            default:
+                Message = "Please click BACK again to exit";
+                break;
+        }
+
+        Toast.makeText(this, Message, Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                mdoubleBackToExitPressedOnce = false;
+            }
+        }, 2000);
     }
 
 }
